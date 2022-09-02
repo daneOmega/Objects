@@ -11,6 +11,9 @@ restSum(0); // => 0
 
 function restSum(...otherNums) {
   // Your code here
+  let counter = 0;
+  otherNums.forEach((el) => (counter += el));
+  return counter;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

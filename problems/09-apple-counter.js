@@ -30,6 +30,13 @@ appleCounter(obj3); // => 3
 
 function appleCounter(appleObj) {
   // Your code here
+  let appleC = 0;
+  let apple = "apple";
+  let appleArray = [...Object.keys(appleObj)];
+  appleArray.forEach((el) => {
+    if (el.toLocaleLowerCase().includes(apple)) appleC += 1;
+  });
+  return appleC;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
